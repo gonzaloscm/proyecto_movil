@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">proyecto</string>
+    <string name="requerido">Requerido</string>
+    <string name="successfully">Se guardo con exito</string>
+</resources>
