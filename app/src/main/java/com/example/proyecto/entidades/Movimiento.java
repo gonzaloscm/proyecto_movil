@@ -7,12 +7,10 @@ import androidx.room.PrimaryKey;
 
 import com.example.proyecto.persistencia.room.Tabla;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Data
+
 @Entity(tableName = Tabla.MOVIMIENTO)
-@NoArgsConstructor
+
 public class Movimiento {
 
     @PrimaryKey(autoGenerate = true)
@@ -22,4 +20,24 @@ public class Movimiento {
     @ColumnInfo(name = "idUsuario")
     private Integer idUsuario;
 
+    public Movimiento() {
+        super();
+    }
+
+    @NonNull
+    public Integer getIdMovimiento() {
+        return idMovimiento;
+    }
+
+    public void setIdMovimiento(@NonNull Integer idMovimiento) {
+        this.idMovimiento = idMovimiento;
+    }
+
+    public Integer getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(Integer idUsuario) {
+        this.idUsuario = idUsuario;
+    }
 }
